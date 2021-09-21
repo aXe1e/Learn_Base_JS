@@ -7,24 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        'use strict';
-        
-        const numberBeforeConvert = 945;
-        console.log(Convert2Obj(numberBeforeConvert));
-
-        function Convert2Obj(numParam){
-            if (isNaN(numParam) || !Number.isInteger(numParam) || numParam < 0 || numParam > 999){
-                console.log('Должно быть целое число из диапазона [0,999]!');
-                return {};
-            }
-            
-            return {units: numParam % 10,
-                    tens: Math.floor(numParam / 10) % 10,
-                    hundreds: Math.floor(numParam / 100),
-            };    
-        }
-
-    </script>
+    <script src="1.js"></script>
 </body>
 </html>
